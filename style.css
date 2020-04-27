@@ -95,8 +95,22 @@ h1 {
 	border: 1px solid #e20d33;
 }
 
+footer {
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+}
+
 @media screen and (max-width: 768px) {
 	.wrapper.spotify {
-		margin-top: 50px;
+		margin: 50px 0;
+	}
+
+	footer {
+		margin-top: 35px;
+		position: static;
 	}
 }
