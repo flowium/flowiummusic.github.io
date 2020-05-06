@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap');
+
+:root {
+	--main-bg-color: #ececec;
+	--main-text-color: #1e1e1e;
+	--reverse-text-color: #ececec;
+	--primary-color: #fc7269;
+}
+
+body {
+	font-family: 'Uniform', sans-serif;
+	background-color: var(--main-bg-color);
+	color: var(--main-text-color);
+	font-size: 14px;
+	user-select: none;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 34px;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 80px;
+	line-height: 1;
+}
+
+.lead-text {
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 24px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--primary-color);
+		text-decoration: none;
+	}
+}
+
+@import './icons.scss';
+@import './main-menu.scss';
+@import './hero.scss';
+@import './btn-flowium.scss';
+@import './side-by-side.scss';

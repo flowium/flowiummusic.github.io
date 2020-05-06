@@ -1,0 +1,14 @@
+.hero {
+	padding: 100px 0;
+
+	&-title {
+		margin-top: 1.8em;
+	}
+
+	&-lead {
+		text-align: center;
+		font-size: 40px;
+		position: relative;
+		top: -25px;
+	}
+}

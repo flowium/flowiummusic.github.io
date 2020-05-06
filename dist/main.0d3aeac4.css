@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap");
+:root {
+  --main-bg-color: #ececec;
+  --main-text-color: #1e1e1e;
+  --reverse-text-color: #ececec;
+  --primary-color: #fc7269;
+}
+
+body {
+  font-family: "Uniform", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-size: 14px;
+  user-select: none;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 34px;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 1;
+}
+
+.lead-text {
+  font-family: "Covered By Your Grace", cursive;
+  font-size: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:hover, a:focus, a:active {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.icon {
+  display: inline-block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.icon-facebook-white {
+  width: 8.2px;
+  height: 15px;
+  background-image: url("/icon-facebook-white.f1721ea7.svg");
+}
+
+.icon-instagram-white {
+  width: 15px;
+  height: 15px;
+  background-image: url("/icon-instagram-white.83ae3d03.svg");
+}
+
+.icon-twitter-white {
+  width: 18.4px;
+  height: 15px;
+  background-image: url("/icon-twitter-white.c6f4043a.svg");
+}
+
+.icon-spotify-white {
+  width: 20px;
+  height: 20px;
+  background-image: url("/icon-spotify-white.968ebb53.svg");
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+  background-color: var(--main-text-color);
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 20px 0 0 0;
+}
+.menu-item {
+  margin-left: 30px;
+}
+.menu-item.logo {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: auto;
+}
+.menu-item.icon-item {
+  margin-left: 20px;
+}
+.menu-link {
+  color: var(--reverse-text-color);
+}
+.menu-link:hover, .menu-link:focus, .menu-link:active {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.menu-link.logo-link {
+  display: inline-block;
+}
+.menu-link.logo-link:hover, .menu-link.logo-link:focus, .menu-link.logo-link:active {
+  color: var(--reverse-text-color);
+}
+
+.hero {
+  padding: 100px 0;
+}
+.hero-title {
+  margin-top: 1.8em;
+}
+.hero-lead {
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  top: -25px;
+}
+
+.btn-flowium {
+  display: inline-block;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 30px;
+  padding: 7px 10px 6px 11px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn-flowium:hover {
+  color: var(--main-text-color);
+  background-color: var(--primary-color);
+  transition: 200ms;
+}
+
+.side-by-side {
+  background: center/cover url("/background-black.17d75dce.svg") no-repeat;
+  padding: 97px 0;
+}
+.side-by-side .iframe-container {
+  width: 525px;
+  margin: 0 auto;
+}
+.side-by-side-title, .side-by-side-text {
+  color: var(--reverse-text-color);
+}
+
+/*# sourceMappingURL=/main.0d3aeac4.css.map */
