@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap");
 :root {
-  --main-bg-color: #ececec;
-  --main-text-color: #1e1e1e;
-  --reverse-text-color: #ececec;
+  --black-color: #1e1e1e;
+  --white-color: #ececec;
   --primary-color: #fc7269;
+  --main-bg-color: var(--white-color);
+  --reverse-bg-color: var(--black-color);
+  --main-text-color: var(--black-color);
+  --reverse-text-color: var(--white-color);
 }
 
 body {
@@ -24,11 +27,23 @@ h2 {
   font-weight: 900;
   font-size: 80px;
   line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 0.25em;
 }
 
 .lead-text {
   font-family: "Covered By Your Grace", cursive;
   font-size: 24px;
+}
+.lead-text-secondary {
+  font-family: "Uniform", sans-serif;
 }
 
 img {
@@ -36,6 +51,10 @@ img {
   height: auto;
 }
 
+a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
 a:hover, a:focus, a:active {
   color: var(--primary-color);
   text-decoration: none;
@@ -78,7 +97,7 @@ a:hover, a:focus, a:active {
   flex-direction: row;
   justify-content: flex-end;
   list-style-type: none;
-  background-color: var(--main-text-color);
+  background-color: var(--reverse-bg-color);
   border-radius: 30px;
   padding: 5px 10px;
   margin: 20px 0 0 0;
@@ -96,6 +115,7 @@ a:hover, a:focus, a:active {
 }
 .menu-link {
   color: var(--reverse-text-color);
+  text-decoration: none;
 }
 .menu-link:hover, .menu-link:focus, .menu-link:active {
   color: var(--primary-color);
@@ -129,6 +149,7 @@ a:hover, a:focus, a:active {
   padding: 7px 10px 6px 11px;
   font-size: 14px;
   font-weight: 500;
+  text-decoration: none;
 }
 .btn-flowium:hover {
   color: var(--main-text-color);
@@ -146,6 +167,64 @@ a:hover, a:focus, a:active {
 }
 .side-by-side-title, .side-by-side-text {
   color: var(--reverse-text-color);
+}
+
+.genres {
+  padding: 33px 0 28px 0;
+}
+.genres-title {
+  text-align: center;
+}
+
+.genrecard-img-container {
+  margin-bottom: 1.5em;
+}
+.genrecard-text {
+  height: 231px;
+}
+
+.whoarewe {
+  background: center/cover url("/background-black.17d75dce.svg") no-repeat var(--reverse-bg-color);
+  padding: 100px 0 100px;
+}
+.whoarewe-wrapper {
+  background: center/contain url("/background-organic-gray.1a4d42e8.svg") no-repeat;
+  width: 1310px;
+  margin: 0 auto;
+}
+.whoarewe-content {
+  padding: 100px 0 100px;
+}
+.whoarewe-title {
+  font-size: 147px;
+  margin: 0;
+}
+.whoarewe-text {
+  width: 90%;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto 1em;
+}
+
+.main-footer {
+  background-color: var(--reverse-bg-color);
+  padding: 30px 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.social-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-link {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=/main.0d3aeac4.css.map */

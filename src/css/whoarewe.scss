@@ -1,0 +1,25 @@
+.whoarewe {
+	background: center/cover url('../assets/img/background-black.svg') no-repeat
+		var(--reverse-bg-color);
+	padding: 100px 0 100px;
+
+	&-wrapper {
+		background: center/contain url('../assets/img/background-organic-gray.svg')
+			no-repeat;
+		width: 1310px;
+		margin: 0 auto;
+	}
+	&-content {
+		padding: 100px 0 100px;
+	}
+	&-title {
+		font-size: 147px;
+		margin: 0;
+	}
+	&-text {
+		width: 90%;
+		text-align: center;
+		font-size: 20px;
+		margin: 0 auto 1em;
+	}
+}

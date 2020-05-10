@@ -3,7 +3,7 @@
 	flex-direction: row;
 	justify-content: flex-end;
 	list-style-type: none;
-	background-color: var(--main-text-color);
+	background-color: var(--reverse-bg-color);
 	border-radius: 30px;
 	padding: 5px 10px;
 	margin: 20px 0 0 0;
@@ -24,6 +24,7 @@
 
 	&-link {
 		color: var(--reverse-text-color);
+		text-decoration: none;
 
 		&:hover,
 		&:focus,

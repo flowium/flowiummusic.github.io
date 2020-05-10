@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap');
 
 :root {
-	--main-bg-color: #ececec;
-	--main-text-color: #1e1e1e;
-	--reverse-text-color: #ececec;
+	--black-color: #1e1e1e;
+	--white-color: #ececec;
 	--primary-color: #fc7269;
+
+	--main-bg-color: var(--white-color);
+	--reverse-bg-color: var(--black-color);
+	--main-text-color: var(--black-color);
+	--reverse-text-color: var(--white-color);
 }
 
 body {
@@ -25,11 +29,24 @@ h2 {
 	font-weight: 900;
 	font-size: 80px;
 	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-weight: 900;
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 0.25em;
 }
 
 .lead-text {
 	font-family: 'Covered By Your Grace', cursive;
 	font-size: 24px;
+
+	&-secondary {
+		font-family: 'Uniform', sans-serif;
+	}
 }
 
 img {
@@ -38,6 +55,9 @@ img {
 }
 
 a {
+	color: var(--text-color);
+	text-decoration: underline;
+
 	&:hover,
 	&:focus,
 	&:active {
@@ -47,7 +67,10 @@ a {
 }
 
 @import './icons.scss';
-@import './main-menu.scss';
+@import './main-header.scss';
 @import './hero.scss';
 @import './btn-flowium.scss';
 @import './side-by-side.scss';
+@import './genres.scss';
+@import './whoarewe.scss';
+@import './main-footer.scss';
