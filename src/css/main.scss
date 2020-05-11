@@ -1,4 +1,7 @@
+@import './media-queries.scss';
 @import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap');
+@import './font-face.scss';
+@import './icons.scss';
 
 :root {
 	--black-color: #1e1e1e;
@@ -23,6 +26,10 @@ h1 {
 	font-weight: 900;
 	font-size: 34px;
 	margin-bottom: 0.5em;
+
+	@include lg {
+		font-size: 30px;
+	}
 }
 
 h2 {
@@ -31,6 +38,10 @@ h2 {
 	line-height: 1;
 	text-transform: uppercase;
 	margin-bottom: 0.5em;
+
+	@include lg {
+		font-size: 69px;
+	}
 }
 
 h3 {
@@ -38,6 +49,10 @@ h3 {
 	font-size: 34px;
 	line-height: 1;
 	margin-bottom: 0.25em;
+
+	@include lg {
+		font-size: 28px;
+	}
 }
 
 .lead-text {
@@ -66,8 +81,6 @@ a {
 	}
 }
 
-@import './font-face.scss';
-@import './icons.scss';
 @import './main-header.scss';
 @import './hero.scss';
 @import './btn-flowium.scss';

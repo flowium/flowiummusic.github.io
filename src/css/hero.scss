@@ -3,6 +3,10 @@
 
 	&-title {
 		margin-top: 1.8em;
+
+		@include lg {
+			margin-top: 0.5em;
+		}
 	}
 
 	&-lead {
@@ -10,5 +14,10 @@
 		font-size: 40px;
 		position: relative;
 		top: -25px;
+
+		@include lg {
+			font-size: 30px;
+			top: -15px;
+		}
 	}
 }

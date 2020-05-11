@@ -12,5 +12,9 @@
 	}
 	&-text {
 		height: 231px;
+
+		@include lg {
+			height: 280px;
+		}
 	}
 }

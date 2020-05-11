@@ -1,0 +1,79 @@
+// media queries
+
+// (standart Bootsrap v3.3.7 definition)
+
+// $screen-xs : 480px !default;
+// $screen-xs-min : $screen-xs !default;
+// $screen-phone : $screen-xs-min !default;
+
+// Small screen / tablet
+// $screen-sm : 768px !default;
+// $screen-sm-min : $screen-sm !default;
+// $screen-tablet : $screen-sm-min !default;
+
+// Medium screen / desktop
+// $screen-md : 992px !default;
+// $screen-md-min : $screen-md !default;
+// $screen-desktop : $screen-md-min !default;
+
+// Large screen / wide desktop
+// $screen-lg : 1200px !default;
+// $screen-lg-min : $screen-lg !default;
+// $screen-lg-desktop : $screen-lg-min !default;
+
+$screen-xs-max: 576px;
+$screen-sm-min: 578px;
+$screen-md-min: 720px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+// $screen-sm-max : ($screen-md-min - 1) !default;
+// $screen-md-max : ($screen-lg-min - 1) !default;
+
+// how to use?
+// p {
+//     @include sm {
+//         font-size: 15px;
+//     }
+// }
+
+// Extra small
+@mixin xs {
+	@media (max-width: #{$screen-xs-max}) {
+		@content;
+	}
+}
+
+// Small
+@mixin sm {
+	@media (min-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+
+// Medium
+@mixin md {
+	@media (min-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+
+// Larger
+@mixin lg {
+	@media (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+
+// Extra Large
+@mixin xl {
+	@media (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+// Custom
+@mixin custom($custom-width) {
+	@media #{$custom-width} {
+		@content;
+	}
+}
