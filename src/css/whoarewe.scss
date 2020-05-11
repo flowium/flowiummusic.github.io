@@ -1,7 +1,7 @@
 .whoarewe {
 	background: center/cover url('../assets/img/background-black.svg') no-repeat
 		var(--reverse-bg-color);
-	padding: 100px 0 100px;
+	padding: 100px 0 0;
 
 	&-wrapper {
 		background: center/contain url('../assets/img/background-organic-gray.svg')
@@ -10,7 +10,7 @@
 		margin: 0 auto;
 	}
 	&-content {
-		padding: 100px 0 100px;
+		padding: 150px 0 100px;
 	}
 	&-title {
 		font-size: 147px;
