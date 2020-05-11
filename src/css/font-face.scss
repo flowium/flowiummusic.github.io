@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'Uniform';
+	src: url('../assets/fonts/Uniform.eot');
+	src: url('../assets/fonts/Uniform.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/Uniform.woff2') format('woff2'),
+		url('../assets/fonts/Uniform.woff') format('woff'),
+		url('../assets/fonts/Uniform.ttf') format('truetype'),
+		url('../assets/fonts/Uniform.svg#../assets/fonts/Uniform') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uniform';
+	src: url('../assets/fonts/Uniform-Ultra.eot');
+	src: url('../assets/fonts/Uniform-Ultra.eot?#iefix')
+			format('embedded-opentype'),
+		url('../assets/fonts/Uniform-Ultra.woff2') format('woff2'),
+		url('../assets/fonts/Uniform-Ultra.woff') format('woff'),
+		url('../assets/fonts/Uniform-Ultra.ttf') format('truetype'),
+		url('../assets/fonts/Uniform-Ultra.svg#../assets/fonts/Uniform-Ultra')
+			format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uniform';
+	src: url('../assets/fonts/Uniform-Medium.eot');
+	src: url('../assets/fonts/Uniform-Medium.eot?#iefix')
+			format('embedded-opentype'),
+		url('../assets/fonts/Uniform-Medium.woff2') format('woff2'),
+		url('../assets/fonts/Uniform-Medium.woff') format('woff'),
+		url('../assets/fonts/Uniform-Medium.ttf') format('truetype'),
+		url('../assets/fonts/Uniform-Medium.svg#Uniform-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
