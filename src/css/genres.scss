@@ -16,5 +16,9 @@
 		@include lg {
 			height: 280px;
 		}
+
+		@include md {
+			height: 405px;
+		}
 	}
 }
