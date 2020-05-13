@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://flowium.live/sitemap.xml
