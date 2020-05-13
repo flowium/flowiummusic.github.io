@@ -50,6 +50,11 @@
 			position: absolute;
 			top: 15px;
 			right: 15px;
+			display: none;
+
+			@include xs {
+				display: inline-block;
+			}
 		}
 	}
 
@@ -81,6 +86,7 @@
 	height: 20px;
 	background-color: var(--main-bg-color);
 	border-radius: 50%;
+	border: none;
 	outline: none;
 
 	&:active,
