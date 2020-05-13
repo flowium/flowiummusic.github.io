@@ -7,6 +7,10 @@
 }
 
 .genrecard {
+	@include xs {
+		margin-bottom: 50px;
+	}
+
 	&-img-container {
 		margin-bottom: 1.5em;
 	}
@@ -19,6 +23,10 @@
 
 		@include md {
 			height: 405px;
+		}
+
+		@include xs {
+			height: auto;
 		}
 	}
 }

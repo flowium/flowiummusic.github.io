@@ -31,6 +31,11 @@
 		@include md {
 			width: 720px;
 		}
+
+		@include xs {
+			width: 100%;
+			background: none;
+		}
 	}
 	&-content {
 		padding: 150px 0 100px;
@@ -55,6 +60,10 @@
 		@include md {
 			font-size: 60px;
 		}
+
+		@include xs {
+			color: var(--reverse-text-color);
+		}
 	}
 	&-text {
 		width: 90%;
@@ -69,6 +78,10 @@
 		@include md {
 			font-size: 16px;
 			margin: 0 auto 1em;
+		}
+
+		@include xs {
+			color: var(--reverse-text-color);
 		}
 	}
 }

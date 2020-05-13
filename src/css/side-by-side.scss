@@ -1,6 +1,10 @@
 .side-by-side {
 	background: center/cover url('../assets/img/background-black.svg') no-repeat;
-	padding: 97px 0;
+	padding: 100px 0;
+
+	@include xs {
+		padding: 100px 0 150px;
+	}
 
 	.iframe-container {
 		width: 100%;
@@ -10,5 +14,9 @@
 	&-title,
 	&-text {
 		color: var(--reverse-text-color);
+	}
+
+	&-btn {
+		margin-bottom: 50px;
 	}
 }

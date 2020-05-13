@@ -175,6 +175,9 @@
 								<i class="icon icon-spotify-white"></i>
 							</a>
 						</li>
+						<li class="menu-item hamburger-item">
+							<button class="btn-hamburger" type="button"></button>
+						</li>
 					</ul>
 				</nav>
 			</header>
@@ -184,10 +187,24 @@
 			<section class="hero">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-7 col-lg-5">
+						<div class="col-lg-7 order-lg-2">
+							<figure class="hero-figure">
+								<img
+									class="hero-img"
+									src="./src/assets/img/deck@3x.png"
+									alt="Musicians Deck"
+									title="Musicians Deck"
+								/>
+								<figcaption class="hero-lead lead-text">
+									Where music flows!
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col-lg-5 order-lg-1">
 							<div class="hero-content">
 								<h1 class="hero-title">
-									Premium playlists by producers and musicians
+									Premium playlists <br class="d-none d-md-inline d-lg-none" />
+									by producers and musicians
 								</h1>
 								<p class="hero-text">
 									In a place where the emotions become melodies, sometimes you
@@ -203,18 +220,6 @@
 								>
 							</div>
 						</div>
-						<div class="col-md-5 col-lg-7">
-							<figure class="hero-figure">
-								<img
-									src="./src/assets/img/deck@3x.png"
-									alt="Musicians Deck"
-									title="Musicians Deck"
-								/>
-								<figcaption class="hero-lead lead-text">
-									Where music flows!
-								</figcaption>
-							</figure>
-						</div>
 					</div>
 				</div>
 			</section>
@@ -222,7 +227,7 @@
 			<section class="side-by-side">
 				<div class="container">
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<div class="side-by-side-content">
 								<h2 class="side-by-side-title">
 									INDIE ELECTRONIC
@@ -253,7 +258,7 @@
 								>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<div class="iframe-container">
 								<iframe
 									src="https://open.spotify.com/embed/playlist/6Vp7RkJ7jfprakv8foXAra"
@@ -273,8 +278,8 @@
 				<h2 class="genres-title">GENRES</h2>
 				<div class="container">
 					<div class="row">
-						<div class="col-4">
-							<div class="genre-card">
+						<div class="col-sm-4">
+							<div class="genrecard">
 								<h3 class="genrecard-title">Indie</h3>
 								<figure class="genrecard-img-container">
 									<img
@@ -309,8 +314,8 @@
 								>
 							</div>
 						</div>
-						<div class="col-4">
-							<div class="genre-card">
+						<div class="col-sm-4">
+							<div class="genrecard">
 								<h3 class="genrecard-title">Electronica</h3>
 								<figure class="genrecard-img-container">
 									<img
@@ -344,8 +349,8 @@
 								>
 							</div>
 						</div>
-						<div class="col-4">
-							<div class="genre-card">
+						<div class="col-sm-4">
+							<div class="genrecard">
 								<h3 class="genrecard-title">Chillwave</h3>
 								<figure class="genrecard-img-container">
 									<img
@@ -453,5 +458,7 @@
 				</li>
 			</ul>
 		</footer>
+
+		<script src="./src/js/main.js"></script>
 	</body>
 </html>

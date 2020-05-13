@@ -30,10 +30,6 @@ h1 {
 	@include lg {
 		font-size: 30px;
 	}
-
-	@include md {
-		font-size: 26px;
-	}
 }
 
 h2 {
@@ -49,6 +45,10 @@ h2 {
 
 	@include md {
 		font-size: 50px;
+	}
+
+	@include xs {
+		font-size: 44px;
 	}
 }
 

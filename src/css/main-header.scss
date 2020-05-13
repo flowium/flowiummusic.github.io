@@ -1,3 +1,9 @@
+.main-header.menu-active {
+	.menu {
+		height: auto;
+	}
+}
+
 .menu {
 	display: flex;
 	flex-direction: row;
@@ -7,18 +13,43 @@
 	border-radius: 30px;
 	padding: 5px 10px;
 	margin: 20px 0 0 0;
+	position: relative;
+
+	@include xs {
+		display: block;
+		padding: 15px;
+		height: 50px;
+	}
 
 	&-item {
 		margin-left: 30px;
+
+		@include xs {
+			margin-bottom: 20px;
+		}
 
 		&.logo {
 			display: inline-block;
 			margin-left: 0;
 			margin-right: auto;
+
+			@include xs {
+				margin-bottom: 40px;
+			}
 		}
 
 		&.icon-item {
-			margin-left: 20px;
+			@include xs {
+				display: inline-block;
+				margin-top: 10px;
+			}
+		}
+
+		&.hamburger-item {
+			margin: 0;
+			position: absolute;
+			top: 15px;
+			right: 15px;
 		}
 	}
 
@@ -42,5 +73,19 @@
 				color: var(--reverse-text-color);
 			}
 		}
+	}
+}
+
+.btn-hamburger {
+	width: 20px;
+	height: 20px;
+	background-color: var(--main-bg-color);
+	border-radius: 50%;
+	outline: none;
+
+	&:active,
+	&:focus,
+	&:hover {
+		outline: none;
 	}
 }
